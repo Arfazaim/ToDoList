@@ -39,6 +39,11 @@
                         <input type="submit" name="submit" id="submit" class="form-submit submit" value="Sign up"/>
                         <a href="#" class="submit-link submit">Sign in</a>
                     </div>
+                    <?php if(isset($_GET['pesan'])) { ?>
+                        <div class="error">
+                           <label><?php echo $_GET['pesan']; ?></label>
+                        </div>
+                     <?php } ?>
                 </form>
             </div>
         </div>
