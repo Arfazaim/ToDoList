@@ -3,7 +3,7 @@
 session_start();
  
 // menghubungkan dengan koneksi
-include 'config.php';
+require_once "config.php";
  
 // menangkap data yang dikirim dari form
 $username = $_POST['username'];
@@ -23,6 +23,6 @@ if($cek > 0) {
    $_SESSION['id_login'] = $data['id'];
    header("location:dashboard/dashboard.php");
 } else {
-   header("location:loginrodolist.php?pesan=Gagal login data tidak ditemukan.");
+   header("location:login.php?pesan=Gagal login data tidak ditemukan.");
 }
 ?>
