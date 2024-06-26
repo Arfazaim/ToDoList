@@ -21,7 +21,7 @@ if($cek > 0) {
    $_SESSION['nama'] = $data['nama'];
    $_SESSION['status'] = "sudah_login";
    $_SESSION['id_login'] = $data['id'];
-   header("location:dashboard/dashboard.php");
+   header("location:../dashboard/dashboard.php");
 } else {
    header("location:login.php?pesan=Gagal login data tidak ditemukan.");
 }
