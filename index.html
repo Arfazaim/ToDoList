@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>To Do List Project</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Icon.jpeg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">TO DO LIST</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="Db/login.php">Sign in</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Kami Hadir Sebagai Aplikasi Pengingat Tugas</h1>
+            <p>Gunakan Aplikasi Kami Sebagai Pengingat Tugas Anda</p>
+            <div class="d-flex">
+              <a href="Contact" class="btn-get-started">Get Started</a>
+           </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="login" class="login section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Informasi Tentang Kami</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              "Sibuk dengan banyak tugas? Jangan khawatir! To Do List siap membantu mengatur semua tugasmu dengan notifikasi yang tepat waktu.
+              Nikmati kemudahan mengelola waktu dengan To Do List!"
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Pengingat Tugas Otomatis</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Antarmuka Pengguna yang Intuitif</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>TEPAT WAKTU</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>"Apakah kamu sering lupa dengan tugas-tugas penting? To Do List 
+              hadir untuk mengubah cara kamu mengelola waktu dan tugas harianmu. Dengan fitur pengingat cerdas, 
+              kamu akan mendapatkan notifikasi tepat waktu sehingga tidak ada lagi tugas yang terlewat. 
+              Aplikasi ini juga dilengkapi dengan antarmuka yang mudah digunakan, memungkinkan kamu untuk menambahkan, mengedit, 
+              dan mengorganisir tugas dengan cepat. Tidak peduli seberapa sibuk jadwalmu, 
+              To Do List akan memastikan semua tugasmu tercatat dan terselesaikan tepat waktu. 
+              Unduh sekarang dan jadilah lebih produktif setiap harinya dengan To Do List !"
+            </p>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Ayo Bergabung Bersama Kami </span><strong>Kami Hadir Sebagai Pengingat Tugas Anda</strong></h3>
+              <p>
+                Manfaatkan waktu anda dengan sempurna mari percayakan kami sebagai asisten pengingat tugas anda
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span> Apa manfaat utama menggunakan aplikasi to-do list pengingat tugas?</h3>
+                <div class="faq-content">
+                  <p>
+                    Manfaat utama menggunakan aplikasi to-do list pengingat tugas adalah membantu pengguna mengatur dan mengelola waktu dengan lebih efisien. Aplikasi ini memungkinkan pengguna untuk mencatat tugas yang perlu diselesaikan, mengatur prioritas, mengatur pengingat, dan memastikan tidak ada tugas yang terlewat. 
+                    Hal ini dapat meningkatkan produktivitas dan mengurangi stres yang disebabkan oleh lupa atau penundaan tugas.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span> Fitur apa saja yang biasanya terdapat pada aplikasi to-do list pengingat tugas?</h3>
+                <div class="faq-content">
+                    <ul>
+                      <li><i class="bi bi-check2-circle"></i> <span>Pembuatan dan pengelolaan daftar tugas</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Pengaturan prioritas tugas</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Pengingat dan notifikasi</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Sinkronisasi dengan kalender</span></li>
+                      <li><i class="bi bi-check2-circle"></i> <span>Pengelompokan tugas berdasarkan kategori atau proyek</span></li>
+                    </ul>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <!-- End Faq item-->
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <h3>Rating pengingat tugas anda</h3>
+            <p class="fst-italic">
+              Mari Percayakan Kami Menjadi Asisten Anda
+            </p>
+
+            <div class="skills-content skills-animation">
+
+              <div class="progress">
+                <span class="skill"><span>Tepat Waktu</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Kurang Tepat Waktu</span> <i class="val">60%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Kesalahan</span> <i class="val">45%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Sangat Kurang tepat waktu</span> <i class="val">0%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /Skills Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Berbagai Macam Fitur Yang Kami Punya</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-book"></i></div>
+              <h4><a href="service-details.html" class="stretched-link"> Pengelompokan Tugas dan Proyek</a></h4>
+              <p>Aplikasi ini memungkinkan pengguna untuk mengelompokkan tugas-tugas ke dalam proyek atau kategori. Misalnya, Anda 
+                dapat membuat proyek bernama "Pekerjaan," "Keluarga," atau "Pribadi" dan menambahkan tugas-tugas terkait ke dalam masing-masing proyek.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bell-fill"></i></div>
+              <h4><a href="service-details.html" class="stretched-link">Pengingat dan Notifikasi</a></h4>
+              <p>
+                Salah satu fitur unggulan dari aplikasi ini adalah kemampuannya untuk mengatur pengingat dan notifikasi. 
+                Pengguna dapat menetapkan waktu atau lokasi tertentu untuk menerima pengingat, memastikan bahwa mereka tidak melewatkan tugas penting.
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar3"></i></div>
+              <h4><a href="service-details.html" class="stretched-link">Pengaturan Tanggal dan Ketepatan Pengingat Waktu</a></h4>
+              <p>Aplikasi ini dilengkapi dengan fitur pengaturan tanggal dan ketepatan pengingat waktu yang memungkinkan 
+                pengguna untuk menetapkan tenggat waktu spesifik dan pengingat yang tepat untuk setiap tugas.
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-app"></i></div>
+              <h4><a href="service-details.html" class="stretched-link">Sinkronisasi Lintas Perangkat</a></h4>
+              <p>Aplikasi ini menawarkan sinkronisasi otomatis lintas perangkat, termasuk ponsel, tablet, dan komputer. 
+                Dengan fitur ini, pengguna dapat mengakses dan memperbarui daftar tugas mereka dari perangkat apa pun yang mereka gunakan. 
+                Misalnya, jika Anda menambahkan tugas di ponsel Anda, tugas tersebut akan segera muncul di tablet dan komputer Anda. 
+                Ini memastikan bahwa daftar tugas 
+                Anda selalu up-to-date dan dapat diakses kapan saja dan di mana saja, meningkatkan fleksibilitas dan kemudahan penggunaan.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Mari Bergabung Bersama Kami</h3>
+            <p>
+              "Tingkatkan produktivitas Anda dengan aplikasi to-do list pengingat tugas terbaik! Atur tugas Anda dalam proyek-proyek terorganisir, 
+              dapatkan pengingat tepat waktu dengan pengaturan tanggal yang akurat, dan nikmati kemudahan sinkronisasi lintas perangkat. 
+              Baik untuk kolaborasi tim maupun manajemen tugas pribadi, aplikasi ini memastikan Anda tidak pernah melewatkan tenggat waktu penting. 
+              Coba sekarang dan rasakan perbedaannya dalam mengelola waktu dan tugas Anda!"
+            </p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Join</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Call To Action Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Ini Adalah Team Kami</p>
+      </div>
+      <!-- End Section Title -->
+
+      <!-- Team member 1-->
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/Team1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Arfa Zaim Al murtdalo</h4>
+                <span>Back-end developer</span>
+                <p>Saya adalah Back-end developer</p>
+                <div class="social">
+                  <a href="https://github.com/Arfazaim"><i class="bi bi-github"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Team Member -->
+
+          <!-- Team member 2-->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/Team2.JPG" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Surya Tagor Dalimunthe</h4>
+                <span>Front-end developer</span>
+                <p>I'm a Front-end developer</p>
+                <div class="social">
+                  <a href="https://github.com/Cyber-eq"><i class="bi bi-github"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Team Member -->
+
+          <!-- Team member 3-->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/yamaha.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ari Putra Pratama</h4>
+                <span>Data base speciallis</span>
+                <p>Saya adalah seorang ahli data base</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-github"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Team Member -->
+        </div>
+      </div>
+
+    </section>
+    <!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Hubungi Kami Di Bawah Ini</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Jl. Tulang Bawang Sel. No.26, Kadipiro, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57136</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>0271734955</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>suryatagor97@gmail.com</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.375035558972!2d110.81359007476325!3d-7.534011492479221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16aef3f5fd25%3A0x901de3bca01ebcf4!2sITS%20PKU%20Muhammadiyah%20Surakarta!5e0!3m2!1sid!2sid!4v1719472631567!5m2!1sid!2sid" 
+              frameborder="0" 
+              style="border:0; width: 100%; height: 270px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /Contact Section -->
+  </main>
+
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">TO DO LIST CENTER</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>ITS PKU MUHAMMADIYAH SURAKARTA</p>
+            <p>NJl. Tulang Bawang Sel. No.26, Kadipiro, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57136</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>0271734955</span></p>
+            <p><strong>Email:</strong> <span>suryatagor97@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Team</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4><strong>Follow Us</strong></h4>
+          <p>Let's come join with TO DO LIST </p>
+          <div class="">
+          <a href="#">Join</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Informatika team's</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://github.com/Cyber-eq">Cyber-eq</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- End Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
