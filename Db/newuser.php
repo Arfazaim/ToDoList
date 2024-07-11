@@ -25,6 +25,7 @@ header("location:index.php?page=home");
     <a href="#" class="text-white"><b><?php echo $_SESSION['system']['name'] ?> - Admin</b></a>
   </div>
   <!-- /.login-logo -->
+
   <div class="card">
     <div class="card-body login-card-body">
       <form action="" id="login-form">
@@ -44,9 +45,51 @@ header("location:index.php?page=home");
             </div>
           </div>
         </div>
-        <!--<p class="register">
-          Don't have an account? <a href="newuser.php">Register now</a>
-        </p>-->
+        <div class="input-group mb-3">
+        <label for="" class="control-label">First Name</label>
+		<input type="text" name="firstname" class="form-control form-control-sm" required value="<?php echo isset($firstname) ? $firstname : '' ?>">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+        <label for="" class="control-label">Last Name</label>
+		<input type="text" name="lastname" class="form-control form-control-sm" required value="<?php echo isset($lastname) ? $lastname : '' ?>">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+							<label for="" class="control-label">User Role</label>
+							<select name="type" id="type" class="custom-select custom-select-sm">
+								<option value="3" <?php echo isset($type) && $type == 3 ? 'selected' : '' ?>>Employee</option>
+								<option value="2" <?php echo isset($type) && $type == 2 ? 'selected' : '' ?>>Project Manager</option>
+								<option value="1" <?php echo isset($type) && $type == 1 ? 'selected' : '' ?>>Admin</option>
+							</select>
+						</div>
+                        <div class="col-md-6">
+						
+						<div class="form-group">
+							<label class="control-label">Email</label>
+							<input type="email" class="form-control form-control-sm" name="email" required value="<?php echo isset($email) ? $email : '' ?>">
+							<small id="#msg"></small>
+						</div>
+						<div class="form-group">
+							<label class="control-label">Password</label>
+							<input type="password" class="form-control form-control-sm" name="password" <?php echo !isset($id) ? "required":'' ?>>
+							<small><i><?php echo isset($id) ? "Leave this blank if you dont want to change you password":'' ?></i></small>
+						</div>
+						<div class="form-group">
+							<label class="label control-label">Confirm Password</label>
+							<input type="password" class="form-control form-control-sm" name="cpass" <?php echo !isset($id) ? 'required' : '' ?>>
+							<small id="pass_match" data-status=''></small>
+						</div>
+					</div>
+				</div>
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
