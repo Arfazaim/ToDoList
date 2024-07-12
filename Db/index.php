@@ -17,6 +17,8 @@
 
 	include 'header.php' 
 ?>
+<link href="../assets/img/Icon.jpeg" rel="icon">
+<link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
   <?php include 'topbar.php' ?>
@@ -122,7 +124,7 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <!--<strong>Copyright &copy; 2021 <a href="https://www.campcodes.com/">CampCodes</a>.</strong>
+  <!-- To the right
     All rights reserved.-->
     <div class="float-right d-none d-sm-inline-block">
       <b><?php echo $_SESSION['system']['name'] ?></b>

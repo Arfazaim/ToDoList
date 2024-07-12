@@ -18,6 +18,8 @@ if(isset($_SESSION['login_id']))
 header("location:index.php?page=home");
 
 ?>
+<link href="../assets/img/Icon.jpeg" rel="icon">
+<link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 <?php include 'header.php' ?>
 <body class="hold-transition login-page bg-black">
 <div class="login-box">
